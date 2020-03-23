@@ -1,0 +1,7 @@
+check row 1 row names in data.txt
+"world" <- entire world 
+"US"
+"United Kingdom"
+"Norway"
+"Brazil"
+etc
