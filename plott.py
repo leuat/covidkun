@@ -1,6 +1,7 @@
 import csv
 import matplotlib.pyplot as plt
 
+
 import sys
 import numpy as np
 import pandas as pd
@@ -112,16 +113,13 @@ for b in BB:
 print("Winner: s = "+str(winnerS) + " , b = "+str(winnerB))
 
 
-
 y2 = np.zeros(N)    
 
 y2 = start + np.exp(x*winnerB-winnerS)
 
-
 plt.plot(x,y)
 plt.plot(x,y2)
 plt.ylabel('Time')
-plt.show()
 
 N = 200
 x = np.linspace(0,N,N)
@@ -131,4 +129,6 @@ y2 = start + np.exp(x*winnerB-winnerS)
 for i in range(32):
     print("In "+str(i)+" days: "+str(int(y2[today+i])))
 
+
+plt.show()
 
